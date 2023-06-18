@@ -11,9 +11,7 @@ def test_read_main():
 
 
 def test_read_predict_positive():
-    response = client.post("/predict/",
-                           json={"text": "Самый большой город"}
-    )
+    response = client.post("/predict/", json={"text": "Самый большой город"})
     json_data = response.json()
 
     assert response.status_code == 200
