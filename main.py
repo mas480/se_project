@@ -1,16 +1,16 @@
-import io
 import streamlit as st
 from transformers import pipeline
 
 
 @st.cache(allow_output_mutation=True)
+
+
 def load_model():
     return pipeline(model="ai-forever/rugpt3large_based_on_gpt2")
 
 
-"""Создание формы для набора текста"""
 def get_text():
-    """Форма для загрузки изображения средствами Streamlit"""
+    """Загрузка изображения средствами Streamlit"""
     text_in = st.text_input(label='Наберите текст')
     if text_in:
         st.write("You entered: ", text_in)
@@ -19,7 +19,7 @@ def get_text():
 
 pipe = load_model()
 
-"""Выводим заголовок страницы средствами Streamlit"""  
+"""Выводим заголовок страницы средствами Streamlit"""
 st.title('Приложение, генерирующее продолжение фразы')
 """Вызываем функцию для набора текста"""
 txt = get_text()
@@ -33,4 +33,4 @@ def print_predictions(txt: str):
 
 if result:
     for_print = print_predictions(txt)
-    st.write('Результат: ','\n', for_print)
+    st.write('Результат: ', '\n', for_print)
