@@ -6,7 +6,8 @@ from transformers import pipeline
 
 
 def load_model():
-    return pipeline(model="ai-forever/rugpt3large_based_on_gpt2")
+    model = pipeline(model="ai-forever/rugpt3large_based_on_gpt2")
+    return model
 
 
 def get_text():
@@ -17,7 +18,7 @@ def get_text():
         return text_in
 
 
-pipe = load_model()
+model_gpt2 = load_model()
 
 """Выводим заголовок страницы средствами Streamlit"""
 st.title('Приложение, генерирующее продолжение фразы')
@@ -28,7 +29,7 @@ result = st.button('Сгенерировать продолжение')
 
 
 def print_predictions(txt: str):
-    return pipe(txt)[0]['generated_text']
+    return model_gpt2(txt)[0]['generated_text']
 
 
 if result:
