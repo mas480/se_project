@@ -17,18 +17,18 @@ def load_model_check():
     return model
 
 
-def test_type_model(model_gpt2):
+def test_type_model():
     model_gpt2 = load_model_check()
     assert str(type(model_gpt2)) == "<class 'transformers.pipelines.text_generation.TextGenerationPipeline'>"
 
 
-def test_example_1(model_gpt2):
+def test_example_1():
     model_gpt2 = load_model_check()
     x = model_gpt2('Сегодня')[0]['generated_text']
     assert x == "Сегодня, в день рождения, я хочу поздравить всех, кто любит и ценит свою Родину, кто"
 
 
-def test_example_2(model_gpt2):
+def test_example_2():
     model_gpt2 = load_model_check()
     x = model_gpt2('Завтра')[0]['generated_text']
     assert x == "Утром, когда я проснулся, я увидел, что в комнате горит свет. Я подумал, что это"
