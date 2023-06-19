@@ -10,8 +10,8 @@ def test_connect_streamlit():
 def test_connect_model():
     x = requests.get('https://huggingface.co/ai-forever/rugpt3large_based_on_gpt2')
     assert x.status_code == 200
-    
-    
+
+
 def load_model_check():
     model = load_model()
     return model
@@ -30,5 +30,5 @@ def test_example_1():
 
 def test_example_2():
     model_gpt2 = load_model_check()
-    x = model_gpt2('Завтра')[0]['generated_text']
+    x = model_gpt2('Утром')[0]['generated_text']
     assert x == "Утром, когда я проснулся, я увидел, что в комнате горит свет. Я подумал, что это"
