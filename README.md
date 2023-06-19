@@ -19,5 +19,7 @@
 * Получает в результате продолжение введенного текста
 
 <h2> Запуск и результаты работы проекта</h2>
+[project](https://drive.google.com/file/d/1TbpGn1XT8X3rEHTAAJsGVNDSyE6A8Ajk/view?usp=drive_link)<br>
+[project1](https://drive.google.com/file/d/1H_v3wx7plmXdRkferZpMcNf05qX1lRKZ/view?usp=drive_link)
 <h2>Авторы:</h2>
 <p>Сейтбалиев Тимур, Матыцин Александр</p>
