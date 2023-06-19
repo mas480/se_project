@@ -19,6 +19,6 @@
 * Получает в результате продолжение введенного текста
 
 <h2> Запуск и результаты работы проекта</h2>
-<img src="https://drive.google.com/file/d/1H_v3wx7plmXdRkferZpMcNf05qX1lRKZ/view?usp=drive_link">
+<img src="https://lh3.google.com/u/0/d/1H_v3wx7plmXdRkferZpMcNf05qX1lRKZ=w1872-h956-iv1">
 <h2>Авторы:</h2>
 <p>Сейтбалиев Тимур, Матыцин Александр</p>
