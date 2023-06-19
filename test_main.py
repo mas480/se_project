@@ -1,7 +1,5 @@
-import io
 import requests
 from main import load_model
-import streamlit as st
 
 
 def load_pipeline():
@@ -26,4 +24,3 @@ def test_example_1(load_pipeline):
 def test_example_2(load_pipeline):
     x = load_model('Завтра')[0]['generated_text']
     assert x == "Утром, когда я проснулся, я увидел, что в комнате горит свет. Я подумал, что это"
-    
