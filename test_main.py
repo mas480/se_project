@@ -1,6 +1,6 @@
 import io
 import requests
-from main import load_pipe
+from main import load_model
 import streamlit as st
 
 
