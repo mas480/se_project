@@ -19,7 +19,7 @@
 * Получает в результате продолжение введенного текста
 
 <h2> Запуск и результаты работы проекта</h2>
-![postman](https://github.com/mas480/se_project/assets/55178421/64e6742c-2972-45f1-ba01-5d228a272064)
-![photo_2023-06-19_13-55-24](https://github.com/mas480/se_project/assets/55178421/41ac69d8-25a0-4adc-9883-468c3bff8086)
+![postman](https://github.com/mas480/se_project/general_view.png)
+![gen_screen](https://github.com/mas480/se_project/postman.png)
 <h2>Авторы:</h2>
 <p>Сейтбалиев Тимур, Матыцин Александр</p>
