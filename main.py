@@ -17,7 +17,7 @@ def get_text():
         return text_in
 
 
-pipe = load_pipe()
+pipe = load_model()
 
 """Выводим заголовок страницы средствами Streamlit"""  
 st.title('Приложение, генерирующее продолжение фразы')
