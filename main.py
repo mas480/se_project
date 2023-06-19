@@ -2,9 +2,7 @@ import streamlit as st
 from transformers import pipeline
 
 
-# @st.cache(allow_output_mutation=True)
-
-
+@st.cache(allow_output_mutation=True)
 def load_model():
     model = pipeline(model="ai-forever/rugpt3large_based_on_gpt2")
     return model
