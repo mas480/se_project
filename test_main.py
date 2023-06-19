@@ -1,18 +1,28 @@
-from fastapi.testclient import TestClient
-from main import app
-
-client = TestClient(app)
-
-
-def test_read_main():
-    response = client.get("/")
-    assert response.status_code == 200
-    assert response.json() == {"message": "Hello World"}
+import io
+from stream import load_pipe
+import streamlit as st
 
 
-def test_read_predict_positive():
-    response = client.post("/predict/", json={"text": "Самый большой город"})
-    json_data = response.json()
+def load_model():
+    model_gpt2 = load_model()
+    return model_gpt2
 
-    assert response.status_code == 200
-    assert json_data == 'Самый большой город в мире, столица штата Нью-Йорк, город, в котором сосредоточены основные'
+
+def test_connect_streamlit():
+    x = requests.get('https://streamlit.io/')
+    assert x.status_code == 200
+
+
+def test_type_model(load_model):
+    assert str(type(load_model)) == "<class 'transformers.pipelines.text_generation.TextGenerationPipeline'>"
+
+
+def test_example_1(load_model):
+    x = load_model('Сегодня')[0]['generated_text']
+    assert x == "Сегодня, в день рождения, я хочу поздравить всех, кто любит и ценит свою Родину, кто"
+
+
+def test_example_2(load_model):
+    x = load_model('Завтра')[0]['generated_text']
+    assert x == "Утром, когда я проснулся, я увидел, что в комнате горит свет. Я подумал, что это"
+    
