@@ -1,12 +1,23 @@
 import requests
-from main import load_model
-
-model_gpt2 = load_model()
+from transformers import pipeline
 
 
 def test_connect_streamlit():
     x = requests.get('https://streamlit.io/')
     assert x.status_code == 200
+
+
+def test_connect_model():
+    x = requests.get('https://huggingface.co/ai-forever/rugpt3large_based_on_gpt2')
+    assert x.status_code == 200
+    
+    
+def load_model_check():
+    model = pipeline(model="ai-forever/rugpt3large_based_on_gpt2")
+    return model
+
+
+model_gpt2 = load_model_check()
 
 
 def test_type_model(model_gpt2):
