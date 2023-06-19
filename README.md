@@ -19,7 +19,6 @@
 * Получает в результате продолжение введенного текста
 
 <h2> Запуск и результаты работы проекта</h2>
-[project](https://drive.google.com/file/d/1TbpGn1XT8X3rEHTAAJsGVNDSyE6A8Ajk/view?usp=drive_link)<br>
-[project1](https://drive.google.com/file/d/1H_v3wx7plmXdRkferZpMcNf05qX1lRKZ/view?usp=drive_link)
+![photo_2023-06-19_13-55-24](https://github.com/mas480/se_project/assets/55178421/4b61b09b-163c-4a82-b1b4-49a8dbfab245)
 <h2>Авторы:</h2>
 <p>Сейтбалиев Тимур, Матыцин Александр</p>
