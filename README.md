@@ -19,6 +19,6 @@
 * Получает в результате продолжение введенного текста
 
 <h2> Запуск и результаты работы проекта</h2>
-<img src="https://lh3.google.com/u/0/d/1H_v3wx7plmXdRkferZpMcNf05qX1lRKZ=w1872-h956-iv1">
+![postman](https://github.com/mas480/se_project/assets/55178421/64e6742c-2972-45f1-ba01-5d228a272064)
 <h2>Авторы:</h2>
 <p>Сейтбалиев Тимур, Матыцин Александр</p>
