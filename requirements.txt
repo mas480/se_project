@@ -4,9 +4,7 @@ Pillow==9.4.0
 pydantic==1.10.9
 streamlit==1.16.0
 transformers==4.30.0
-torch --extra-index-url https://download.pytorch.org/whl/cpu
 uvicorn==0.22.0
-httpx
 keras==2.12.0
 tensorflow==2.12.0
 altair==4.0
